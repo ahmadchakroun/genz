@@ -1,7 +1,9 @@
 import 'package:yoser/screens/contact_list_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:yoser/screens/factuer.dart';
 import 'package:yoser/screens/home_screen.dart';
 import 'package:yoser/screens/about_screen.dart';
+import 'package:yoser/screens/personnalisation_screen.dart';
 import '../widgets/custom_bottom_nav_bar.dart';
 
 import 'package:yoser/screens/panier_screen.dart';
@@ -35,7 +37,7 @@ class BaseScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(builder: (context) => const HomeScreen()),
               );
-            } else if (index == 1) {
+            } else if (index == 4) {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => AboutScreen()),
@@ -51,6 +53,12 @@ class BaseScreen extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => PanierScreen()),
+              );
+            }
+            else if (index == 1) {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => ContactListScreen()),
               );
             }
 

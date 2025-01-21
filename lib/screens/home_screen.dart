@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yoser/screens/about_screen.dart';
 import 'package:yoser/screens/categories_screen.dart';
 import 'package:yoser/widgets/base_screen.dart';
 
@@ -19,7 +20,11 @@ class HomeScreen extends StatelessWidget {
           actions: [
             GestureDetector(
               onTap: () {
-              },
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const AboutScreen()),
+        );
+      },
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/images/1.png'),
               ),

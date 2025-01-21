@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yoser/screens/BiensAgricoles_screen.dart';
+import 'package:yoser/screens/service_screen.dart';
 import 'package:yoser/widgets/base_screen.dart';
 import 'package:yoser/screens/IntrantAgricoles_screen.dart';
 
@@ -44,7 +45,7 @@ class CategoriesScreen extends StatelessWidget {
                 'Agriculture Farming',
                 'assets/images/2.png',
                 'but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum',
-                IntrantListScreen(), // for now b3ad nbdlha service
+                ServiceScreen(), // for now b3ad nbdlha service
               ),
               const SizedBox(height: 16),
               _buildDetailedCategory(

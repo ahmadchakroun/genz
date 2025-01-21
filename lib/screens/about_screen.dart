@@ -7,7 +7,7 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseScreen(
-      currentIndex: 1,
+      currentIndex: 4,
       showBottomNavBar: true,
       child: Scaffold(
         appBar: AppBar(
